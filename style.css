@@ -1,0 +1,111 @@
+:root{
+  --hover-botones:#D1DA0D4D;
+  --botones-joystick: #DA8EB50;
+  --fondo-joystick: #3C406D4D;
+  --color-body:#000000;
+  --fondo-pared: black;
+}
+body{
+  margin-top: 48px;
+  margin-left: 0;
+  margin-bottom: 0;
+  background: var(--color-body);
+}
+.joystick{
+  position: absolute;
+  bottom: 20px;;
+  right: 50%;
+  background: var(--fondo-joystick);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.arriba{
+  width: 35px;
+  height: 42px;
+  background: var(--botones-joystick);
+  position: absolute;
+  left: 38px;
+  border-radius: 20px 20px 0 0;
+  border-top: red 3px solid;
+}
+.abajo{
+  width: 35px;
+  height: 42px;
+  background: var(--botones-joystick);
+  position: absolute;
+  left: 38px;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+  border-bottom: red 3px solid;
+}
+.derecha{
+  width: 37px;
+  height: 35px;
+  background: var(--botones-joystick);
+  position: absolute;
+  right: 0px;
+  bottom: 38px;
+  border-radius: 0 20px 20px 0;
+  border-right: red 3px solid;
+}
+.izquierda{
+  width: 37px;
+  height: 35px;
+  background: var(--botones-joystick);
+  position: absolute;
+  bottom: 38px;
+  border-radius: 20px 0 0 20px;
+  border-left: red 3px solid;
+}
+.arriba:hover{
+  height: 35px;
+  background: var(--hover-botones);
+  border-top: red 10px solid;
+}
+.abajo:hover{
+  height: 35px;
+  background: var(--hover-botones);
+  border-bottom: red 10px solid;
+}
+.derecha:hover {
+  width: 30px;
+  background: var(--hover-botones);
+  border-right: red 10px solid;
+}
+.izquierda:hover {
+  width: 30px;
+  background: var(--hover-botones);
+  border-left: red 10px solid;
+}
+/*fondo de canvas*/
+#game{
+  border: red 2px solid;
+  border-bottom: red 3px solid;
+}
+#tiempo{
+  
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 100px;
+}
+.b_siguiente{
+  border: 4px solid black;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  color: black;
+  background: #64D85D;
+  text-decoration: none;
+}
+.b_reintentar{
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  background: red;
+  color: white;
+}
+.b_reintentar:hover{
+  padding: 8px;
+  }
